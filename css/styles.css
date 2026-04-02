@@ -1,4 +1,4 @@
-/* PNL Fizik — tema sipas stemës së shkollës */
+/* Physix — theme inspired by PNL / school colours */
 :root {
   --maroon: #800000;
   --maroon-deep: #6b0000;
@@ -152,7 +152,7 @@ a:hover {
   color: var(--white);
 }
 
-/* ——— Hero + valë e kuqe ——— */
+/* ——— Hero + wave ——— */
 .hero {
   position: relative;
   min-height: clamp(420px, 72vh, 640px);
@@ -343,7 +343,7 @@ main {
   background: var(--white);
 }
 
-/* ——— Seksione temash (të ndara hapësirë) ——— */
+/* ——— Topic sections ——— */
 .topic-shell {
   width: 100%;
   padding-bottom: 3rem;
@@ -525,7 +525,7 @@ main {
   }
 }
 
-/* ——— Modal / popup ——— */
+/* ——— Modal dialogs ——— */
 .topic-modal {
   width: calc(100vw - 2rem);
   max-width: 720px;
@@ -693,20 +693,19 @@ main {
   margin: 0 auto;
 }
 
-.site-footer h2 {
+.footer-brand {
   font-family: var(--font-display);
-  font-size: 1.15rem;
-  margin: 0 0 0.35rem;
-  letter-spacing: 0.06em;
+  font-size: clamp(1.15rem, 3vw, 1.45rem);
+  font-weight: 700;
+  margin: 0 0 0.5rem;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
 }
 
-.site-footer .honor {
-  font-size: 0.85rem;
-  opacity: 0.92;
-  margin: 0 0 0.5rem;
+.footer-brand__by {
+  font-weight: 400;
+  letter-spacing: 0.12em;
   color: var(--gold);
-  letter-spacing: 0.04em;
 }
 
 .site-footer .meta {
