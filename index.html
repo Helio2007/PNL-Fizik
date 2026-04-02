@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sq">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Physix — waves, electric and magnetic fields, radioactivity, and space physics. A student project by PNL."
+      content="Physix — valë, fusha elektrike e magnetike, radioaktivitet, planetë dhe fizika e hapësirës. Projekt nga PNL."
     />
     <title>Physix</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -19,47 +19,48 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <a class="skip-link" href="#content">Skip to content</a>
+    <a class="skip-link" href="#permbajtje">Kalo te përmbajtja</a>
 
     <header class="site-header">
       <div class="header-inner">
-        <a class="brand" href="#top" aria-label="Physix — Home">
+        <a class="brand" href="#krye" aria-label="Physix — Kreu">
+          <!-- Your real logo: save it as assets/logo.png (or .jpg — then change src below) -->
           <img
             class="brand__logo"
             src="assets/logo.png"
-            alt="Physix / PNL emblem"
+            alt="PNL school crest"
             width="52"
             height="52"
             onerror="this.onerror=null;this.src='assets/school-emblem.svg';"
           />
           <span class="brand__text">
             <span class="brand__name">Physix</span>
-            <span class="brand__tag">Physics · Five topics</span>
+            <span class="brand__tag">Fizikë · Pesë tema</span>
           </span>
         </a>
-        <nav aria-label="Main">
+        <nav aria-label="Kryesore">
           <ul class="nav-links">
-            <li><a href="#waves">Waves</a></li>
-            <li><a href="#electric-field">Electric field</a></li>
-            <li><a href="#magnetic-field">Magnetic field</a></li>
-            <li><a href="#radioactivity">Radioactivity</a></li>
-            <li><a href="#space-physics">Space physics</a></li>
+            <li><a href="#valët">Valët</a></li>
+            <li><a href="#fusha-elektrike">Fusha elektrike</a></li>
+            <li><a href="#fusha-magnetike">Fusha magnetike</a></li>
+            <li><a href="#radioaktiviteti">Radioaktiviteti</a></li>
+            <li><a href="#fizika-hapësirës">Fizika e hapësirës</a></li>
           </ul>
         </nav>
       </div>
     </header>
 
-    <section id="top" class="hero" aria-labelledby="hero-title">
+    <section id="krye" class="hero" aria-labelledby="hero-title">
       <div class="hero__content">
         <p class="hero__badge">Physix</p>
-        <h1 id="hero-title">Explore physics through five core topics</h1>
+        <h1 id="hero-title">Zbulo fizikën përmes pesë temave kryesore</h1>
         <p class="hero__lead">
-          From waves and electromagnetic fields to the atomic nucleus and the cosmos —
-          clear explanations, illustrations, and deeper detail in each section.
+          Nga valët dhe fushat elektromagnetike te bërthama atomike, planetët dhe
+          kozmosi — shpjegime të qarta, foto dhe më shumë detaje në çdo seksion.
         </p>
         <div class="hero__actions">
-          <a class="btn btn--gold" href="#content">Browse topics</a>
-          <a class="btn btn--outline" href="#waves">Start with waves</a>
+          <a class="btn btn--gold" href="#permbajtje">Shfletoni temat</a>
+          <a class="btn btn--outline" href="#valët">Filloni me valët</a>
         </div>
       </div>
       <svg
@@ -76,77 +77,78 @@
       </svg>
     </section>
 
-    <main id="content">
+    <main id="permbajtje">
       <div class="main-intro-wrap">
         <div class="intro-block intro-block--media">
           <div class="intro-block__text">
-            <h2>About this project</h2>
+            <h2>Rreth projektit</h2>
             <p>
-              This site is a hub for your presentation: each topic includes an overview,
-              a featured photo, and a modal with key facts, context, and hands-on project ideas.
+              Kjo faqe është qendër për prezantimin tuaj: çdo temë ka përmbledhje, foto dhe
+              një dritare me fakte, kontekst dhe ide praktike për klasë ose grup.
             </p>
             <p>
-              Ideas connect across the syllabus — for example, electromagnetic waves tie
-              electric and magnetic fields into one model that explains light and radio.
+              Konceptet lidhen me njëri-tjetrin — për shembull valët elektromagnetike bashkojnë
+              fushën elektrike me fushën magnetike në një model që shpjegon dritën dhe radion.
             </p>
           </div>
           <figure class="intro-figure">
             <img
               src="https://images.unsplash.com/photo-1507413245164-6160d8298b31?auto=format&amp;fit=crop&amp;w=960&amp;q=80"
-              alt="Physics lab equipment and experiments"
+              alt="Pajisje laboratori fizike"
               width="960"
               height="720"
               loading="lazy"
             />
-            <figcaption>Physics lab (Unsplash)</figcaption>
+            <figcaption>Laborator fizike (Unsplash)</figcaption>
           </figure>
         </div>
       </div>
 
       <div class="topic-shell">
-        <section id="waves" class="topic-section" aria-labelledby="topic-waves-title">
+        <section id="valët" class="topic-section" aria-labelledby="topic-valët-title">
           <div class="topic-section__container">
-            <p class="topic-section__meta">Topic 1 / 5</p>
+            <p class="topic-section__meta">Tema 1 / 5</p>
             <div class="topic-section__layout">
               <figure class="topic-figure">
                 <img
                   src="https://images.unsplash.com/photo-1505118380757-91f5f5632de0?auto=format&amp;fit=crop&amp;w=960&amp;q=80"
-                  alt="Waves on water"
+                  alt="Valë në sipërfaqe uji"
                   width="960"
                   height="640"
                   loading="lazy"
                 />
-                <figcaption>Waves on water — energy travelling through a medium (Unsplash)</figcaption>
+                <figcaption>Valë në ujë — energji që përhapet në një medium (Unsplash)</figcaption>
               </figure>
-              <article class="topic-card" aria-labelledby="topic-waves-title">
+              <article class="topic-card" aria-labelledby="topic-valët-title">
                 <div class="topic-card__head">
                   <span class="topic-card__icon" aria-hidden="true">〰</span>
-                  <h3 id="topic-waves-title">Waves</h3>
+                  <h3 id="topic-valët-title">Valët</h3>
                 </div>
                 <div class="topic-card__body">
                   <p>
-                    Waves carry energy and information through a medium — or, for light,
-                    through vacuum. Amplitude measures how strongly the medium is displaced;
-                    frequency counts how many oscillations occur each second.
+                    Valët transmetojnë energji dhe informacion përmes një mediumi — ose, në
+                    rastin e dritës, edhe në vakuum. Amplituda tregon sa fort lëviz mediumi;
+                    frekuenca numëron sa herë në sekondë përsëritet një dridhje.
                   </p>
                   <p>
-                    In water and air, waves reflect at boundaries (e.g. a shoreline) and can
-                    reinforce or cancel where they meet — that is <strong>interference</strong>.
+                    Në ujë dhe ajër, valët reflektohen në kufi (p.sh. bregdet) dhe mund të
+                    përforcohen ose të zhbëhen kur hasin njëra-tjetrën — kjo është
+                    <strong>ndërhyrja</strong>.
                   </p>
                   <p>
-                    Classic demos: longitudinal and transverse waves on a spring (“slinky”),
-                    sound in air, and surface waves on water.
+                    Demonstrime klasike: valë gjatësore dhe pingullore në litar (“slinky”),
+                    tingull në ajër dhe valë sipërfaqësore në ujë.
                   </p>
                   <p class="topic-card__keywords">
-                    <strong>Focus:</strong> v = fλ · interference · reflection
+                    <strong>Fokus:</strong> v = fλ · ndërhyrja · reflektimi
                   </p>
                   <div class="topic-card__actions">
                     <button
                       type="button"
                       class="btn btn--gold btn--compact"
-                      data-modal-target="modal-waves"
+                      data-modal-target="modal-valët"
                     >
-                      Open full overview
+                      Hap përmbledhjen e plotë
                     </button>
                   </div>
                 </div>
@@ -156,53 +158,53 @@
         </section>
 
         <section
-          id="electric-field"
+          id="fusha-elektrike"
           class="topic-section"
-          aria-labelledby="topic-electric-title"
+          aria-labelledby="topic-fusha-elektrike-title"
         >
           <div class="topic-section__container">
-            <p class="topic-section__meta">Topic 2 / 5</p>
+            <p class="topic-section__meta">Tema 2 / 5</p>
             <div class="topic-section__layout topic-section__layout--reverse">
               <figure class="topic-figure">
                 <img
                   src="https://images.unsplash.com/photo-1614064641938-3bbee5291e21?auto=format&amp;fit=crop&amp;w=960&amp;q=80"
-                  alt="Electrical discharge in the atmosphere"
+                  alt="Shkarkim elektrik në atmosferë"
                   width="960"
                   height="640"
                   loading="lazy"
                 />
-                <figcaption>Electrical discharge — illustration of intense electric energy (Unsplash)</figcaption>
+                <figcaption>Shkarkim elektrik — energji elektrike e fortë (Unsplash)</figcaption>
               </figure>
               <article class="topic-card">
                 <div class="topic-card__head">
                   <span class="topic-card__icon" aria-hidden="true">⚡</span>
-                  <h3 id="topic-electric-title">Electric field</h3>
+                  <h3 id="topic-fusha-elektrike-title">Fusha elektrike</h3>
                 </div>
                 <div class="topic-card__body">
                   <p>
-                    Every electric charge creates an <strong>electric field</strong> around itself —
-                    a way to describe the force another charge would feel, depending on
-                    distance and geometry.
+                    Çdo ngarkesë elektrike krijon rreth vetës një <strong>fushë elektrike</strong> —
+                    mënyrë për të përshkruar forcën që do të ndiente një ngarkesë tjetër,
+                    sipas distancës dhe gjeometrisë.
                   </p>
                   <p>
-                    Fields are often drawn as lines inspired by the direction a small
-                    positive test charge would move. Closer line spacing means a stronger
-                    field in that region.
+                    Fusha vizatohet shpesh me vija sipas drejtimit e një ngarkese pozitive
+                    të vogël test. Vija më të dendura do të thotë fushë më e fortë në atë
+                    zonë.
                   </p>
                   <p>
-                    Coulomb’s law gives the force between point charges; Gauss’s law helps
-                    compute flux through closed surfaces when symmetry is simple.
+                    Ligji i Coulomb-it jep forcën midis ngarkesave pikë; ligji i Gauss-it
+                    thjeshton fluksin kur simetria është e thjeshtë.
                   </p>
                   <p class="topic-card__keywords">
-                    <strong>Focus:</strong> E · potential · capacitance · energy in the field
+                    <strong>Fokus:</strong> E · potenciali · kapaciteti · energjia në fushë
                   </p>
                   <div class="topic-card__actions">
                     <button
                       type="button"
                       class="btn btn--gold btn--compact"
-                      data-modal-target="modal-electric-field"
+                      data-modal-target="modal-fusha-elektrike"
                     >
-                      Open full overview
+                      Hap përmbledhjen e plotë
                     </button>
                   </div>
                 </div>
@@ -212,53 +214,53 @@
         </section>
 
         <section
-          id="magnetic-field"
+          id="fusha-magnetike"
           class="topic-section"
-          aria-labelledby="topic-magnetic-title"
+          aria-labelledby="topic-fusha-magnetike-title"
         >
           <div class="topic-section__container">
-            <p class="topic-section__meta">Topic 3 / 5</p>
+            <p class="topic-section__meta">Tema 3 / 5</p>
             <div class="topic-section__layout">
               <figure class="topic-figure">
                 <img
                   src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&amp;fit=crop&amp;w=960&amp;q=80"
-                  alt="Magnets and magnetic field lab setup"
+                  alt="Magnet dhe laborator"
                   width="960"
                   height="640"
                   loading="lazy"
                 />
-                <figcaption>Magnet and field mapping — tied to electric currents (Unsplash)</figcaption>
+                <figcaption>Magnet dhe harta fushë — lidhur me rrymat elektrike (Unsplash)</figcaption>
               </figure>
               <article class="topic-card">
                 <div class="topic-card__head">
                   <span class="topic-card__icon" aria-hidden="true">🧲</span>
-                  <h3 id="topic-magnetic-title">Magnetic field</h3>
+                  <h3 id="topic-fusha-magnetike-title">Fusha magnetike</h3>
                 </div>
                 <div class="topic-card__body">
                   <p>
-                    Permanent magnets and currents in wires produce a magnetic field
-                    <strong>B</strong>. Field lines help predict the force on the north pole of an
-                    ideal small compass.
+                    Magnetët e përhershëm dhe rrymat në përcjellësa krijojnë fushën magnetike
+                    <strong>B</strong>. Vijat ndihmojnë të parashikohet forca mbi polin verior të një
+                    busolle të vogël ideale.
                   </p>
                   <p>
-                    In the 1800s, Faraday and others found that a changing magnetic flux
-                    through a coil induces a voltage — the principle behind generators and
-                    many modern sensors.
+                    Në shekullin XIX, Faraday dhe të tjerët zbuluan se ndryshimi i fluksit
+                    magnetik përmes një spiraje indukton tension — parimi i gjeneratorëve dhe
+                    shumë sensorëve.
                   </p>
                   <p>
-                    Together with the electric field, <strong>electromagnetic induction</strong> and
-                    electromagnetic waves build a single picture of light and radio.
+                    Bashkë me fushën elektrike, <strong>induksioni elektromagnetik</strong> dhe valët
+                    elektromagnetike japin një foto të përbashkët të dritës dhe radios.
                   </p>
                   <p class="topic-card__keywords">
-                    <strong>Focus:</strong> B · Lorentz force · electromagnetic induction
+                    <strong>Fokus:</strong> B · forca e Lorencit · induksioni elektromagnetik
                   </p>
                   <div class="topic-card__actions">
                     <button
                       type="button"
                       class="btn btn--gold btn--compact"
-                      data-modal-target="modal-magnetic-field"
+                      data-modal-target="modal-fusha-magnetike"
                     >
-                      Open full overview
+                      Hap përmbledhjen e plotë
                     </button>
                   </div>
                 </div>
@@ -268,53 +270,52 @@
         </section>
 
         <section
-          id="radioactivity"
+          id="radioaktiviteti"
           class="topic-section"
-          aria-labelledby="topic-radioactivity-title"
+          aria-labelledby="topic-radioaktiviteti-title"
         >
           <div class="topic-section__container">
-            <p class="topic-section__meta">Topic 4 / 5</p>
+            <p class="topic-section__meta">Tema 4 / 5</p>
             <div class="topic-section__layout topic-section__layout--reverse">
               <figure class="topic-figure">
                 <img
                   src="https://images.unsplash.com/photo-1532187863486-deabcc4438e2?auto=format&amp;fit=crop&amp;w=960&amp;q=80"
-                  alt="Molecular models and laboratory research"
+                  alt="Modele molekulare në laborator"
                   width="960"
                   height="640"
                   loading="lazy"
                 />
-                <figcaption>Laboratory work — linked to the structure of matter (Unsplash)</figcaption>
+                <figcaption>Kërkim laboratorik — lidhur me strukturën e lëndës (Unsplash)</figcaption>
               </figure>
               <article class="topic-card">
                 <div class="topic-card__head">
                   <span class="topic-card__icon" aria-hidden="true">☢</span>
-                  <h3 id="topic-radioactivity-title">Radioactivity</h3>
+                  <h3 id="topic-radioaktiviteti-title">Radioaktiviteti</h3>
                 </div>
                 <div class="topic-card__body">
                   <p>
-                    Inside some nuclei, nuclear forces cannot bind every combination of
-                    protons and neutrons stably; the nucleus may decay by emitting particles
-                    or radiation.
+                    Në disa nukleuse, forcat nukleare nuk mbajnë çdo kombinim protonësh e
+                    neutronësh në mënyrë të qëndrueshme; bërthama mund të zbërthehet duke
+                    hedhur grimca ose rrezatim.
                   </p>
                   <p>
-                    α particles (helium-4 nuclei), β⁺ or β⁻ electrons, and high-energy γ
-                    photons penetrate matter very differently — shielding is designed
-                    accordingly.
+                    Grimcat α, elektronet β dhe fotonet γ kanë depërtim shumë të ndryshëm —
+                    mbrojtja projektohet sipas llojit të rrezatimit.
                   </p>
                   <p>
-                    Activity A (in becquerel) counts decays per unit time; half-life
-                    T<sub>½</sub> tells you how quickly an isotope’s activity drops.
+                    Aktiviteti A (në becquerel) mat dekaimet për njësi kohe; gjysmëkohëzgjatja
+                    T<sub>½</sub> tregon sa shpejt bie aktiviteti i një izotopi.
                   </p>
                   <p class="topic-card__keywords">
-                    <strong>Focus:</strong> decay · half-life · dosimetry · shielding
+                    <strong>Fokus:</strong> dekaimi · gjysmëkohëzgjatja · dozimetria · mbrojtja
                   </p>
                   <div class="topic-card__actions">
                     <button
                       type="button"
                       class="btn btn--gold btn--compact"
-                      data-modal-target="modal-radioactivity"
+                      data-modal-target="modal-radioaktiviteti"
                     >
-                      Open full overview
+                      Hap përmbledhjen e plotë
                     </button>
                   </div>
                 </div>
@@ -324,53 +325,58 @@
         </section>
 
         <section
-          id="space-physics"
+          id="fizika-hapësirës"
           class="topic-section"
-          aria-labelledby="topic-space-title"
+          aria-labelledby="topic-fizika-hapësirës-title"
         >
           <div class="topic-section__container">
-            <p class="topic-section__meta">Topic 5 / 5</p>
+            <p class="topic-section__meta">Tema 5 / 5</p>
             <div class="topic-section__layout">
               <figure class="topic-figure">
                 <img
-                  src="https://images.unsplash.com/photo-1462331940025-496dfbfc7561?auto=format&amp;fit=crop&amp;w=960&amp;q=80"
-                  alt="Stars and nebula in deep space"
+                  src="https://images.unsplash.com/photo-1614732414444-096e5f1122d5?auto=format&amp;fit=crop&amp;w=960&amp;q=80"
+                  alt="Saturni me unazat — planet në sistemin diellor"
                   width="960"
                   height="640"
                   loading="lazy"
                 />
-                <figcaption>Deep space — huge scales in physics (Unsplash)</figcaption>
+                <figcaption>Planet Saturn me unaza — shembull orbitash dhe masash qiellore (Unsplash)</figcaption>
               </figure>
               <article class="topic-card">
                 <div class="topic-card__head">
                   <span class="topic-card__icon" aria-hidden="true">✧</span>
-                  <h3 id="topic-space-title">Space physics</h3>
+                  <h3 id="topic-fizika-hapësirës-title">Fizika e hapësirës</h3>
                 </div>
                 <div class="topic-card__body">
                   <p>
-                    A satellite around Earth or a comet approaching the Sun follows paths
-                    described as <strong>orbits</strong>, often approximated as conic sections using
-                    Kepler’s laws.
+                    Sistemi ynë diellor përbëhet nga Dielli, tetë <strong>planetët kryesorë</strong>
+                    (duke përfshirë Tokën), planetët e vegjël, asteroidët dhe kometat — secili
+                    ndjek <strong>orbita</strong> të përcaktuara kryesisht nga graviteti i Diellit.
                   </p>
                   <p>
-                    Newton’s law of universal gravitation gives the force between two masses;
-                    the speed needed for a low Earth orbit is often quoted around
-                    v ≈ 7.9 km/s (depending on altitude).
+                    Toka, hëna artificiale apo një komet që i afrohet Diellit lëvizin në rrugë
+                    që shpesh aproksimohen si seksione konike (elips, hiperbolë) sipas
+                    ligjeve të Kepler-it.
                   </p>
                   <p>
-                    Modern cosmology links galaxy observations to models of cosmic
-                    expansion and to dark matter and dark energy.
+                    Ligji i gravitacionit universal të Newton-it përshkruan forcën midis dy
+                    masave; për një orbitë të ulët rreth Tokës shpejtësia rrethore shpesh
+                    përmendet afërsisht v ≈ 7,9 km/s (varësisht nga lartësia).
+                  </p>
+                  <p>
+                    Kozmologjia bashkëkohore lidh vëzhgimin e galaktikave me ekspansionin e
+                    universit dhe modele me materie të errët dhe energji të errët.
                   </p>
                   <p class="topic-card__keywords">
-                    <strong>Focus:</strong> orbits · energy · gravitation
+                    <strong>Fokus:</strong> planetët · orbita · energjia · gravitacioni
                   </p>
                   <div class="topic-card__actions">
                     <button
                       type="button"
                       class="btn btn--gold btn--compact"
-                      data-modal-target="modal-space-physics"
+                      data-modal-target="modal-fizika-hapësirës"
                     >
-                      Open full overview
+                      Hap përmbledhjen e plotë
                     </button>
                   </div>
                 </div>
@@ -381,282 +387,283 @@
       </div>
     </main>
 
-    <dialog class="topic-modal" id="modal-waves" aria-labelledby="modal-waves-h">
+    <dialog class="topic-modal" id="modal-valët" aria-labelledby="modal-valët-h">
       <div class="topic-modal__inner">
-        <button type="button" class="topic-modal__close" aria-label="Close dialog">×</button>
-        <h2 id="modal-waves-h">Waves — beyond everyday intuition</h2>
+        <button type="button" class="topic-modal__close" aria-label="Mbyll">×</button>
+        <h2 id="modal-valët-h">Valët — përtej të përditshmes</h2>
         <p class="topic-modal__lead">
-          Waves connect music, the sea, optics, and communications in one mathematical language.
+          Valët lidhin muzikën, detin, optikën dhe komunikimet në një gjuhë matematikore.
         </p>
         <figure class="topic-modal__figure">
           <img
             src="https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&amp;fit=crop&amp;w=900&amp;q=80"
-            alt="Mountain landscape — visual metaphor for waves in nature"
+            alt="Peizazh malor"
             width="900"
             height="506"
             loading="lazy"
           />
-          <figcaption>Illustrative landscape — waves appear wherever energy propagates (Unsplash)</figcaption>
+          <figcaption>Peizazh ilustrues — valët shfaqen kudo ku përhapet energjia (Unsplash)</figcaption>
         </figure>
         <div class="topic-modal__body">
           <p>
-            In physics, a wave is a disturbance propagating from place to place. Wavelength
-            λ, frequency f, and wave speed v satisfy <strong>v = fλ</strong>, one of the most useful
-            relationships in wave analysis.
+            Në fizikë, valja është një shqetësim që lëviz nga një pikë në tjetrën. Gjatësia
+            valore λ, frekuenca f dhe shpejtësia v plotësojnë <strong>v = fλ</strong>, një nga barazimet
+            më të përdorura.
           </p>
           <p>
-            Waves can be <strong>transverse</strong> (displacement perpendicular to propagation, like
-            light in vacuum) or <strong>longitudinal</strong> (displacement parallel, like sound in air in
-            a simple one-dimensional picture).
+            Valët mund të jenë <strong>transversale</strong> (zhvendosja pingul me përhapjen, si drita në
+            vakuum) ose <strong>gjatësore</strong> (paralele, si tingulli në ajër në një model të thjeshtë).
           </p>
           <dl class="topic-modal__facts">
-            <dt>Energy and amplitude</dt>
+            <dt>Energjia dhe amplituda</dt>
             <dd>
-              For many linear waves, power scales with amplitude squared — amplifying a
-              signal increases the energy it carries.
+              Për shumë valë lineare, fuqia rritet me katrorin e amplitudës — prandaj
+              amplifikimi i sinjalit rrit energjinë e bartur.
             </dd>
-            <dt>Reflection and refraction</dt>
+            <dt>Reflektimi dhe përthyerja</dt>
             <dd>
-              At a boundary between media with different refractive indices, some energy
-              reflects and some refracts according to Snell’s law in optics.
+              Në kufi midis dy mediumeve, një pjesë e energjisë reflektohet ose përthyhet
+              sipas ligjit të Snell-it në optikë.
             </dd>
-            <dt>Modern examples</dt>
+            <dt>Shembuj bashkëkohorë</dt>
             <dd>
-              Sonar, radar, medical ultrasound, and radio transmitters use different
-              frequencies to measure distance or carry information.
+              Sonari, radari, ultratingujt mjekësorë dhe radiodërguesit përdorin frekuenca të
+              ndryshme për distanca ose informacion.
             </dd>
           </dl>
-          <h3>Project ideas</h3>
+          <h3>Ide për projekt</h3>
           <ul>
-            <li>Demo with a water tray or a spring to show reflection and standing waves.</li>
-            <li>Measure sound frequency with a phone app; compare to a resonant tube length.</li>
-            <li>Sketch constructive/destructive interference from two sources on water (if a lab is available).</li>
+            <li>Demonstrim me ujë ose litar për reflektim dhe valë stacionare.</li>
+            <li>Mat frekuencën e tingullit me telefon; krahaso me gjatësinë e një tubi rezonues.</li>
+            <li>Skicë ndërhyrjeje konstruktive/destruktive me dy burime në ujë (nëse ka laborator).</li>
           </ul>
           <p class="topic-modal__note">
-            For a presentation, add graphs (amplitude vs. time) or photos from a simple class demo.
+            Për prezantim: shto grafe (amplitudë vs. kohë) ose foto nga eksperimenti në klasë.
           </p>
         </div>
       </div>
     </dialog>
 
-    <dialog class="topic-modal" id="modal-electric-field" aria-labelledby="modal-electric-h">
+    <dialog class="topic-modal" id="modal-fusha-elektrike" aria-labelledby="modal-fusha-el-h">
       <div class="topic-modal__inner">
-        <button type="button" class="topic-modal__close" aria-label="Close dialog">×</button>
-        <h2 id="modal-electric-h">Electric field — from vector E to a simple circuit</h2>
-        <p class="topic-modal__lead">Charges create fields; fields describe force on every new charge.</p>
+        <button type="button" class="topic-modal__close" aria-label="Mbyll">×</button>
+        <h2 id="modal-fusha-el-h">Fusha elektrike — nga vektori E te qarku</h2>
+        <p class="topic-modal__lead">Ngarkesat krijojnë fushë; fusha përshkruan forcën mbi çdo ngarkesë të re.</p>
         <figure class="topic-modal__figure">
           <img
             src="https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&amp;fit=crop&amp;w=900&amp;q=80"
-            alt="Power lines and electrical grid infrastructure"
+            alt="Linja tensioni të lartë"
             width="900"
             height="506"
             loading="lazy"
           />
-          <figcaption>Power infrastructure — voltage and energy transmission (Unsplash)</figcaption>
+          <figcaption>Infrastrukturë elektrike — tension dhe energji (Unsplash)</figcaption>
         </figure>
         <div class="topic-modal__body">
           <p>
-            Electric field strength at a point measures how strongly the field would push a
-            unit positive charge. In dielectric materials, the field inside is usually
-            reduced compared with vacuum, depending on the dielectric constant.
+            Intensiteti i fushës elektrike në një pikë mat sa fort do të shtynte fusha një
+            ngarkesë njësie pozitive. Në dielektrikë, fusha brenda materialit zakonisht
+            zbutet krahasuar me vakumin, sipas konstantës dielektrike.
           </p>
           <p>
-            Electric potential V and potential difference ΔV relate to work moving charge
-            between two points. That is why stored energy in a capacitor depends on the field
-            between plates and on capacitance C.
+            Potenciali V dhe diferenca e potencialit ΔV lidhen me punën për të lëvizur
+            ngarkesën midis dy pikave. Kjo shpjegon energjinë e ruajtur në një kondensator.
           </p>
           <dl class="topic-modal__facts">
-            <dt>Coulomb &amp; Gauss (ideas)</dt>
+            <dt>Coulomb dhe Gauss (ide)</dt>
             <dd>
-              Coulomb’s law gives force between point charges. Gauss’s law simplifies flux
-              calculations when there is spherical, cylindrical, or planar symmetry.
+              Ligji i Coulomb-it: forca midis ngarkesave pikë. Ligji i Gauss-it: thjeshtëson
+              fluksin kur ka simetri sferike, cilindrike ose planare.
             </dd>
-            <dt>Energy in the field</dt>
+            <dt>Energjia në fushë</dt>
             <dd>
-              In many setups, stored energy is tied to integrating field strength over the
-              region where the field is non-negligible.
+              Në shumë konfigurime, energjia e ruajtur lidhet me integrimin e intensitetit të
+              fushës në hapësirën ku ajo është e rëndësishme.
             </dd>
-            <dt>Everyday safety</dt>
+            <dt>Siguria</dt>
             <dd>
-              High voltage without good insulation risks shock or arc flash; grounding and
-              protective devices are standard in modern wiring.
+              Tension i lartë pa izolim të mirë rrezikon goditje ose shkëndijë; tokëzimi dhe
+              përcaktuesit e mbrojtjes janë standard.
             </dd>
           </dl>
-          <h3>Project ideas</h3>
+          <h3>Ide për projekt</h3>
           <ul>
-            <li>Sketch field lines for two opposite charges and a neutral region between them.</li>
-            <li>Explain why two charged parallel plates produce an approximately uniform field between them.</li>
-            <li>Research a simple everyday example (static hair, a lighter spark).</li>
+            <li>Vizato vija fushë për dy ngarkesa të kundërta.</li>
+            <li>Shpjego pse dy pllaka paralele japin fushë afërsisht homogjene mes tyre.</li>
+            <li>Gjej një shembull nga jeta (flokë statike, shkëndijë).</li>
           </ul>
           <p class="topic-modal__note">
-            A short animation of current, voltage, and resistance can connect to Ohm’s law as an extension.
+            Një animacion i shkurtër i qarkut lidh tensionin, rrymën dhe rezistencën (Ohm).
           </p>
         </div>
       </div>
     </dialog>
 
-    <dialog class="topic-modal" id="modal-magnetic-field" aria-labelledby="modal-magnetic-h">
+    <dialog class="topic-modal" id="modal-fusha-magnetike" aria-labelledby="modal-fusha-mag-h">
       <div class="topic-modal__inner">
-        <button type="button" class="topic-modal__close" aria-label="Close dialog">×</button>
-        <h2 id="modal-magnetic-h">Magnetic field — from magnets to induction</h2>
+        <button type="button" class="topic-modal__close" aria-label="Mbyll">×</button>
+        <h2 id="modal-fusha-mag-h">Fusha magnetike — nga magneti te induksioni</h2>
         <p class="topic-modal__lead">
-          B, currents, and changing flux — motors, generators, and hospital MRI.
+          B, rrymat dhe fluksi në ndryshim — motorë, gjeneratorë dhe MRI.
         </p>
         <figure class="topic-modal__figure">
           <img
             src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?auto=format&amp;fit=crop&amp;w=900&amp;q=80"
-            alt="Electrical wiring and equipment"
+            alt="Pajisje elektrike"
             width="900"
             height="506"
             loading="lazy"
           />
-          <figcaption>Conductors and devices — linking current and field (Unsplash)</figcaption>
+          <figcaption>Përcjellësa dhe pajisje (Unsplash)</figcaption>
         </figure>
         <div class="topic-modal__body">
           <p>
-            Magnetic field B describes how a magnet or a current affects moving charges.
-            Right-hand rules help predict field direction for simple straight wires.
+            Fusha B përshkruan si një magnet ose një rrymë ndikon në ngarkesa në lëvizje.
+            Rregullat e dorës së djathtë ndihmojnë për drejtimin e fushës në përcjellësa të
+            thjeshtë.
           </p>
           <p>
-            Changing magnetic flux Φ through a closed loop (e.g. a coil) induces an emf —
-            the discovery behind transformers, dynamos, and many contactless sensors.
+            Ndryshimi i fluksit magnetik Φ përmes një spiraje indukton një forcë
+            elektromotore — baza e transformatorëve dhe dinamo.
           </p>
           <p>
-            For charge q moving at velocity <strong>v</strong> in field <strong>B</strong>, the Lorentz force is
-            <strong>F = q (v × B)</strong>, a bridge between electromagnetism and mechanics.
+            Për ngarkesë q me shpejtësi <strong>v</strong> në fushë <strong>B</strong>, forca e Lorencit:
+            <strong>F = q (v × B)</strong>.
           </p>
           <dl class="topic-modal__facts">
-            <dt>Magnetic materials</dt>
+            <dt>Materialet magnetike</dt>
             <dd>
-              Ferromagnets (like iron) greatly enhance B compared with air; paramagnets
-              weakly enhance it; diamagnets weakly oppose an applied field.
+              Ferromagnetikët forcojnë ndjeshëm B; paramagnetikët pak; diamagnetikët e
+              zbehin pak fushën e jashtme.
             </dd>
-            <dt>Tokamaks and MRI (advanced examples)</dt>
+            <dt>Tokamak dhe MRI</dt>
             <dd>
-              Strong fields confine plasma or align proton spins in medical imaging — same
-              core physics, very different engineering.
+              Fusha të forta kontrollojnë plazmën ose spinin e protonëve në diagnostikim —
+              i njëjti fizik bazë, inxhinieri tjetër.
             </dd>
           </dl>
-          <h3>Project ideas</h3>
+          <h3>Ide për projekt</h3>
           <ul>
-            <li>With a magnet, coil, and LED, show a voltage pulse when the magnet moves.</li>
-            <li>Sketch force direction for a proton entering perpendicular to uniform B.</li>
-            <li>Discuss why transformers use an iron core and insulation between windings.</li>
+            <li>Magnet + spiraj + LED për impuls tensioni kur lëviz magneti.</li>
+            <li>Vizato forcën për proton që hyn pingul në B uniforme.</li>
+            <li>Diskutim: pse transformatori ka bërthamë hekuri?</li>
           </ul>
-          <p class="topic-modal__note">Keep classroom demos at low voltage and with supervision.</p>
+          <p class="topic-modal__note">Eksperimentet me rrymë në tension të ulët dhe me mbikëqyrje.</p>
         </div>
       </div>
     </dialog>
 
-    <dialog class="topic-modal" id="modal-radioactivity" aria-labelledby="modal-radio-h">
+    <dialog class="topic-modal" id="modal-radioaktiviteti" aria-labelledby="modal-radio-h">
       <div class="topic-modal__inner">
-        <button type="button" class="topic-modal__close" aria-label="Close dialog">×</button>
-        <h2 id="modal-radio-h">Radioactivity — decay, measurement, and responsibility</h2>
-        <p class="topic-modal__lead">Unstable nuclei decay; we measure, describe, and shield.</p>
+        <button type="button" class="topic-modal__close" aria-label="Mbyll">×</button>
+        <h2 id="modal-radio-h">Radioaktiviteti — dekaim, matje, përgjegjësi</h2>
+        <p class="topic-modal__lead">Bërthamat e pabstabilit zbërthehen; ne matim dhe mbrohemi.</p>
         <figure class="topic-modal__figure">
           <img
             src="https://images.unsplash.com/photo-1576086213369-97a306d36557?auto=format&amp;fit=crop&amp;w=900&amp;q=80"
-            alt="Science laboratory with microscope"
+            alt="Laborator shkencor"
             width="900"
             height="506"
             loading="lazy"
           />
-          <figcaption>Laboratory work — radioactivity ties to nuclear structure (Unsplash)</figcaption>
+          <figcaption>Laborator — lidhje me bërthamën (Unsplash)</figcaption>
         </figure>
         <div class="topic-modal__body">
           <p>
-            α particles are heavy and stopped easily (e.g. by paper); β penetrates a few
-            centimetres in tissue; γ photons need denser shielding (lead, concrete) for
-            strong attenuation.
+            α ndalojnë lehtë (p.sh. me letër); β depërtojnë disa cm në inde; γ kërkojnë
+            mburoja më të dendura si plumb ose beton.
           </p>
           <p>
-            Half-life T<sub>½</sub> is the time for activity to drop by half; after n half-lives,
-            activity is (½)<sup>n</sup> of the original. This underpins carbon-14 dating and nuclear
-            waste timelines.
+            Gjysmëkohëzgjatja T<sub>½</sub>: pas n gjysmëkohësh aktiviteti mbetet (½)<sup>n</sup> i fillimit —
+            thelbësore për karbon-14 dhe mbetje nukleare.
           </p>
           <p>
-            Activity is measured in <strong>becquerel (Bq)</strong>, decays per second; biological dose
-            uses units like gray and sievert that depend on energy absorbed and radiation type.
+            Aktiviteti në <strong>becquerel (Bq)</strong>; dozat biologjike përdorin gray dhe sievert.
           </p>
           <dl class="topic-modal__facts">
-            <dt>Common applications</dt>
+            <dt>Zbatime</dt>
             <dd>
-              Medicine (PET, targeted therapy), industrial gauges, and nuclear power are
-              professional domains — always with strict regulation.
+              Mjekësi (PET, terapi), industri, energji nukleare — gjithmonë me rregulla
+              strikte.
             </dd>
-            <dt>Protection (summary)</dt>
+            <dt>Mbrojtja</dt>
             <dd>
-              Time, distance, and shielding: limit exposure, stay farther from sources when
-              possible, and use appropriate materials.
+              Koha, distanca, mburoja: pak ekspozim, larg burimit, materiale të përshtatshme.
             </dd>
           </dl>
-          <h3>Project ideas</h3>
+          <h3>Ide për projekt</h3>
           <ul>
-            <li>Comparison table: α, β, γ — penetration, charge, example isotope.</li>
-            <li>Ethical presentation: pros and cons of nuclear energy with cited sources.</li>
-            <li>Without a counter, explain in words how a Geiger–Müller tube works.</li>
+            <li>Tabelë: α, β, γ — depërtimi, ngarkesa, shembull izotopi.</li>
+            <li>Diskutim etik mbi energjinë nukleare me burime.</li>
+            <li>Shpjegim me fjalë i tubit të Geigerit pa pajisje.</li>
           </ul>
           <p class="topic-modal__note">
-            Do not handle unknown radioactive sources; at school use only models, figures, and verified data.
+            Mos prek burime të panjohura; në shkollë përdor modele dhe të dhëna të verifikuara.
           </p>
         </div>
       </div>
     </dialog>
 
-    <dialog class="topic-modal" id="modal-space-physics" aria-labelledby="modal-space-h">
+    <dialog class="topic-modal" id="modal-fizika-hapësirës" aria-labelledby="modal-hapësirë-h">
       <div class="topic-modal__inner">
-        <button type="button" class="topic-modal__close" aria-label="Close dialog">×</button>
-        <h2 id="modal-space-h">Space physics — orbits, mass, and the cosmos</h2>
+        <button type="button" class="topic-modal__close" aria-label="Mbyll">×</button>
+        <h2 id="modal-hapësirë-h">Fizika e hapësirës — planetët, orbita, kozmosi</h2>
         <p class="topic-modal__lead">
-          From throwing a stone to galaxies: the same gravitation, different scales.
+          Nga gurët e hedhur te orbitat e planetëve: i njëjti gravitacion, shkallë të ndryshme.
         </p>
         <figure class="topic-modal__figure">
           <img
             src="https://images.unsplash.com/photo-1614732414444-096e5f1122d5?auto=format&amp;fit=crop&amp;w=900&amp;q=80"
-            alt="Saturn and its rings"
+            alt="Saturni dhe unazat e tij"
             width="900"
             height="506"
             loading="lazy"
           />
-          <figcaption>Celestial body — orbits and gravitational dynamics (Unsplash)</figcaption>
+          <figcaption>Saturni — një nga planetët e jashtëm me unaza; dinamikë gravitacionale (Unsplash)</figcaption>
         </figure>
         <div class="topic-modal__body">
           <p>
-            For many problems Earth is treated as a large central mass and the satellite as
-            small — orbital energy and ellipse size follow Kepler-style relations (e.g.
-            T² ∝ a³ for the solar system, used with care).
+            <strong>Planetët</strong> e sistemit diellor lëvizin kryesisht në planin e përafërt me
+            eklipsikën, secili në një orbitë eliptike me Diellin në një fokus (aproksimim i
+            mirë për shumë llogaritje). Toka është planeti ynë; Marsi, Jupiteri, Saturni
+            dhe të tjerët kanë masa, rreze orbitale dhe periudha të ndryshme — kjo lidhet
+            me ligjen e gravitetit dhe ligjet e Kepler-it (T² ∝ a³ për sistemin diellor,
+            me interpretim të kujdesshëm).
           </p>
           <p>
-            Escape speed from a body follows from kinetic and gravitational potential
-            energy; reaching low Earth orbit needs large speed, which is why multi-stage
-            rockets burn for many minutes.
+            Hënat natyrore (si Titani rreth Saturnit) dhe mjetet artificiale përcjellin
+            orbita që varen nga masa e planetit prind dhe nga lartësia mesatare e orbitës.
           </p>
           <p>
-            The cosmic microwave background and galactic redshift are two strong lines of
-            evidence for an expanding universe studied with ground- and space-based
-            telescopes.
+            Shpejtësia e arrësjes nga një trup varet nga energjia kinetike dhe potenciali
+            gravitacional; raketat shumëfazëshe nevojiten për arritjen e orbitës së ulët
+            tokësore sepse kërkohet shumë energji kinetike.
+          </p>
+          <p>
+            Rrezatimi kozmik i sfondit dhe zhvendosja e kuqe e galaktikave mbështesin
+            modelin e një universi në ekspans të studiuar me teleskopë.
           </p>
           <dl class="topic-modal__facts">
-            <dt>Newton &amp; Kepler</dt>
+            <dt>Newton dhe Kepler</dt>
             <dd>
-              Newton showed an inverse-square force gives elliptical planetary orbits;
-              Kepler had described the motion empirically from data first.
+              Newton-i tregoi se forca inverse-katrore jep orbita eliptike për planetët;
+              Kepler-i përshkroi fillimisht lëvizjen nga të dhënat.
             </dd>
-            <dt>Modern missions ISS, JWST, planetary probes</dt>
+            <dt>Misionet</dt>
             <dd>
-              They extend what we can observe — but the same mathematical foundations you
-              learn in school still apply.
+              ISS, JWST dhe sondat te planetët zgjerojnë vëzhgimin — por matematika mbetet
+              ajo që mësoni në shkollë.
             </dd>
           </dl>
-          <h3>Project ideas</h3>
+          <h3>Ide për projekt</h3>
           <ul>
-            <li>Compute v<sub>circ</sub> ≈ √(GM/r) for a low Earth orbit using tabulated G, M, r.</li>
-            <li>Compare orbital periods for two satellites at different radii.</li>
-            <li>Short report on Voyager, Cassini, or a Mars rover with mission milestones.</li>
+            <li>Llogarit v<sub>circ</sub> ≈ √(GM/r) për orbitë të afërt tokësore.</li>
+            <li>Krahaso periudhat orbitale të dy satelitësh në rreze të ndryshëm.</li>
+            <li>Raport i shkurtër: Cassini te Saturni, ose një sondë te Marsi, me data kyçe.</li>
           </ul>
           <p class="topic-modal__note">
-            Precise numbers depend on the model (centre-to-centre distance, mass distribution);
-            state your approximations clearly.
+            Numrat e sakta varen nga modeli (distanca mes qendrave, shpërndarja e masës);
+            përmend aproksimet.
           </p>
         </div>
       </div>
@@ -665,7 +672,7 @@
     <footer class="site-footer">
       <div class="footer-inner">
         <p class="footer-brand">Physix <span class="footer-brand__by">by PNL</span></p>
-        <p class="meta">Waves · Fields · Nuclei · Cosmos</p>
+        <p class="meta">Valë · Fusha · Bërthama · Planetë · Kozmos</p>
       </div>
     </footer>
 

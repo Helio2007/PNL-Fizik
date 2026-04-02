@@ -1,4 +1,4 @@
-/* Physix — theme inspired by PNL / school colours */
+/* Physix — tema me ngjyrat PNL / shkollës */
 :root {
   --maroon: #800000;
   --maroon-deep: #6b0000;
@@ -152,7 +152,7 @@ a:hover {
   color: var(--white);
 }
 
-/* ——— Hero + wave ——— */
+/* ——— Hero + valë ——— */
 .hero {
   position: relative;
   min-height: clamp(420px, 72vh, 640px);
