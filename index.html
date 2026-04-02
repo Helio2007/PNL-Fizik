@@ -10,6 +10,7 @@
     <title>Projekt Fizike | Gjimnazi Petro Nini Luarasi</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://images.unsplash.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,700;1,700&family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&display=swap"
       rel="stylesheet"
@@ -23,7 +24,6 @@
     <header class="site-header">
       <div class="header-inner">
         <a class="brand" href="#krye" aria-label="Kreu — Gjimnazi Petro Nini Luarasi">
-          <!-- Vendosni skedarin zyrtar PNG si assets/logo.png — pamja e re përdoret automatikisht -->
           <img
             class="brand__logo"
             src="assets/logo.png"
@@ -78,14 +78,30 @@
 
     <main id="tema">
       <div class="main-intro-wrap">
-        <div class="intro-block">
-          <h2>Përmbledhje e projektit</h2>
-          <p>
-            Faqja përmbledh pesë kapituj të fizikës që lidhen me shkencën bashkëkohore
-            dhe me zbatimin praktik. Mund të plotësoni çdo seksion me eksperimente,
-            matje ose prezantim në klasë. Për çdo temë mund të hapni dritaren me
-            detaje shtesë.
-          </p>
+        <div class="intro-block intro-block--media">
+          <div class="intro-block__text">
+            <h2>Përmbledhje e projektit</h2>
+            <p>
+              Kjo faqe është një bazë për prezantimin tuaj: secila temë ka tekst
+              shpjegues, foto ilustruese dhe një dritare me detaje, fakte kyçe dhe
+              ide praktike për klasë ose ekip.
+            </p>
+            <p>
+              Fushat nga valët te kozmosi lidhen me një rrjetë konceptesh —
+              për shembull valët elektromagnetike bashkojnë fushën elektrike me
+              atë magnetike në një model të vetëm që shpjegon dritën dhe komunikimin me radio.
+            </p>
+          </div>
+          <figure class="intro-figure">
+            <img
+              src="https://images.unsplash.com/photo-1507413245164-6160d8298b31?auto=format&amp;fit=crop&amp;w=960&amp;q=80"
+              alt="Pajisje laboratori fizike dhe eksperimente"
+              width="960"
+              height="720"
+              loading="lazy"
+            />
+            <figcaption>Laborator fizike — ilustrim (Unsplash)</figcaption>
+          </figure>
         </div>
       </div>
 
@@ -93,35 +109,53 @@
         <section id="valët" class="topic-section" aria-labelledby="topic-valët-title">
           <div class="topic-section__container">
             <p class="topic-section__meta">Tema 1 / 5</p>
-            <article class="topic-card" aria-labelledby="topic-valët-title">
-              <div class="topic-card__head">
-                <span class="topic-card__icon" aria-hidden="true">〰</span>
-                <h3 id="topic-valët-title">Valët</h3>
-              </div>
-              <div class="topic-card__body">
-                <p>
-                  Valët përhapin energji pa lëvizje neto të lëndës (në valë
-                  përthyerje). Në ujë, ajër dhe fushë — amplituda, frekuenca dhe
-                  gjatësia valore përshkruajnë sjelljen e tyre.
-                </p>
-                <p>
-                  Shembuj: valë uji, valë zanore, valë transversale e gjatësore në
-                  litar.
-                </p>
-                <p class="topic-card__keywords">
-                  <strong>Fokus:</strong> v = fλ · ndërhyrja e valëve · reflektimi
-                </p>
-                <div class="topic-card__actions">
-                  <button
-                    type="button"
-                    class="btn btn--gold btn--compact"
-                    data-modal-target="modal-valët"
-                  >
-                    Hap përmbledhjen e plotë
-                  </button>
+            <div class="topic-section__layout">
+              <figure class="topic-figure">
+                <img
+                  src="https://images.unsplash.com/photo-1505118380757-91f5f5632de0?auto=format&amp;fit=crop&amp;w=960&amp;q=80"
+                  alt="Valë në sipërfaqe ujore"
+                  width="960"
+                  height="640"
+                  loading="lazy"
+                />
+                <figcaption>Valë në ujë — shembull vizual i përhapjes së energjisë (Unsplash)</figcaption>
+              </figure>
+              <article class="topic-card" aria-labelledby="topic-valët-title">
+                <div class="topic-card__head">
+                  <span class="topic-card__icon" aria-hidden="true">〰</span>
+                  <h3 id="topic-valët-title">Valët</h3>
                 </div>
-              </div>
-            </article>
+                <div class="topic-card__body">
+                  <p>
+                    Valët përhapin energji dhe informacion përmes një mediumi ose — në
+                    rastin e dritës — edhe në vakuum. Amplituda tregon “sa fort” lëviz
+                    mediumi; frekuenca thërr se sa shpesh përsëritet një shkundje në një
+                    sekondë.
+                  </p>
+                  <p>
+                    Në ujë dhe ajër shohim valë që përthyehen në kufij (p.sh. bregdeti)
+                    dhe mund të përforcohen ose të zbehën kur dy valë hasin njëra-tjetrën
+                    — kjo është <strong>ndërhyrja</strong>.
+                  </p>
+                  <p>
+                    Shembuj klasikë: valë në litargjatësore dhe pingullore (“slinky”),
+                    valë zanore që u përhapin në ajër, dhe valët e sipërfaqes së ujit.
+                  </p>
+                  <p class="topic-card__keywords">
+                    <strong>Fokus:</strong> v = fλ · ndërhyrja e valëve · reflektimi
+                  </p>
+                  <div class="topic-card__actions">
+                    <button
+                      type="button"
+                      class="btn btn--gold btn--compact"
+                      data-modal-target="modal-valët"
+                    >
+                      Hap përmbledhjen e plotë
+                    </button>
+                  </div>
+                </div>
+              </article>
+            </div>
           </div>
         </section>
 
@@ -132,35 +166,53 @@
         >
           <div class="topic-section__container">
             <p class="topic-section__meta">Tema 2 / 5</p>
-            <article class="topic-card">
-              <div class="topic-card__head">
-                <span class="topic-card__icon" aria-hidden="true">⚡</span>
-                <h3 id="topic-fusha-elektrike-title">Fusha elektrike</h3>
-              </div>
-              <div class="topic-card__body">
-                <p>
-                  Çdo ngarkesë elektrike krijon rreth vetës një fushë elektrike.
-                  Forca që vepron mbi një ngarkesë tjetër varet nga intensiteti i
-                  fushës dhe nga madhësia e ngarkesës.
-                </p>
-                <p>
-                  Ligji i Coulomb-it dhe ligji i Gauss-it janë mjete për të llogaritur
-                  fushën në gjeometri të thjeshtuara.
-                </p>
-                <p class="topic-card__keywords">
-                  <strong>Fokus:</strong> E · potenciali · kapaciteti · energjia në fushë
-                </p>
-                <div class="topic-card__actions">
-                  <button
-                    type="button"
-                    class="btn btn--gold btn--compact"
-                    data-modal-target="modal-fusha-elektrike"
-                  >
-                    Hap përmbledhjen e plotë
-                  </button>
+            <div class="topic-section__layout topic-section__layout--reverse">
+              <figure class="topic-figure">
+                <img
+                  src="https://images.unsplash.com/photo-1614064641938-3bbee5291e21?auto=format&amp;fit=crop&amp;w=960&amp;q=80"
+                  alt="Shkarkim elektrik dhe energji në atmosferë"
+                  width="960"
+                  height="640"
+                  loading="lazy"
+                />
+                <figcaption>Shkarkim elektrik në atmosferë — ilustrim energjie të madhe (Unsplash)</figcaption>
+              </figure>
+              <article class="topic-card">
+                <div class="topic-card__head">
+                  <span class="topic-card__icon" aria-hidden="true">⚡</span>
+                  <h3 id="topic-fusha-elektrike-title">Fusha elektrike</h3>
                 </div>
-              </div>
-            </article>
+                <div class="topic-card__body">
+                  <p>
+                    Çdo ngarkesë elektrike krijon rreth vetes një <strong>fushë elektrike</strong>
+                    — një mënyrë për të përshkruar se si do të vepronte forca mbi një
+                    ngarkesë tjetër, në varësi të distancës dhe nga gjeometria.
+                  </p>
+                  <p>
+                    Fusha paraqitet shpesh me vija të frymëzuara nga përcaktimi i
+                    drejtimit të një ngarkesë pozitive të vogël (“provë”). Sa më të
+                    dendura jënë vijat, aq më “e fortë” konsiderohet fusha në atë zonë.
+                  </p>
+                  <p>
+                    Ligji i Coulomb-it për forcat midis dy ngarkesave dhe ligji i Gauss-it
+                    për fluksin e fushës përmes sipërfaqesh të mbyllura janë mjete
+                    klasike për llogaritje në simetri të thjeshtë.
+                  </p>
+                  <p class="topic-card__keywords">
+                    <strong>Fokus:</strong> E · potenciali · kapaciteti · energjia në fushë
+                  </p>
+                  <div class="topic-card__actions">
+                    <button
+                      type="button"
+                      class="btn btn--gold btn--compact"
+                      data-modal-target="modal-fusha-elektrike"
+                    >
+                      Hap përmbledhjen e plotë
+                    </button>
+                  </div>
+                </div>
+              </article>
+            </div>
           </div>
         </section>
 
@@ -171,34 +223,52 @@
         >
           <div class="topic-section__container">
             <p class="topic-section__meta">Tema 3 / 5</p>
-            <article class="topic-card">
-              <div class="topic-card__head">
-                <span class="topic-card__icon" aria-hidden="true">🧲</span>
-                <h3 id="topic-fusha-magnetike-title">Fusha magnetike</h3>
-              </div>
-              <div class="topic-card__body">
-                <p>
-                  Magnetët dhe rrymat elektrike prodhojnë fushë magnetike B. Vija
-                  e fushës tregojnë drejtimin e një poli verior imagjinar të vogël.
-                </p>
-                <p>
-                  Ligji i Ampère-Maxwell-it lidh rrymat dhe ndryshimin e fushës
-                  elektrike me induksionin magnetik.
-                </p>
-                <p class="topic-card__keywords">
-                  <strong>Fokus:</strong> B · forca e Lorencit · induksioni elektromagnetik
-                </p>
-                <div class="topic-card__actions">
-                  <button
-                    type="button"
-                    class="btn btn--gold btn--compact"
-                    data-modal-target="modal-fusha-magnetike"
-                  >
-                    Hap përmbledhjen e plotë
-                  </button>
+            <div class="topic-section__layout">
+              <figure class="topic-figure">
+                <img
+                  src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&amp;fit=crop&amp;w=960&amp;q=80"
+                  alt="Magnet dhe fushë magnetike në laborator"
+                  width="960"
+                  height="640"
+                  loading="lazy"
+                />
+                <figcaption>Magnet dhe harta e fushës — lidhje me rrymat elektrike (Unsplash)</figcaption>
+              </figure>
+              <article class="topic-card">
+                <div class="topic-card__head">
+                  <span class="topic-card__icon" aria-hidden="true">🧲</span>
+                  <h3 id="topic-fusha-magnetike-title">Fusha magnetike</h3>
                 </div>
-              </div>
-            </article>
+                <div class="topic-card__body">
+                  <p>
+                    Magnetët e përhershëm dhe rrymat në përcjellësa krijojnë një fushë
+                    magnetike <strong>B</strong>. Vijat e fushës ndihmojnë të parashikohet drejtimi i
+                    forcës mbi polin verior të një busolle të vogël ideale.
+                  </p>
+                  <p>
+                    Në vitet 1800-të, Faraday dhe të tjerët zbuluan se një ndryshim i
+                    fluksit magnetik përmes një spiraje indukton tension — parimi që
+                    qëndron pas gjeneratorëve dhe shumë sensorëve modernë.
+                  </p>
+                  <p>
+                    Bashkë me fushën elektrike, fusha magnetike formon bazën e
+                    <strong>induksionit elektromagnetik</strong> dhe të valëve elektromagnetike.
+                  </p>
+                  <p class="topic-card__keywords">
+                    <strong>Fokus:</strong> B · forca e Lorencit · induksioni elektromagnetik
+                  </p>
+                  <div class="topic-card__actions">
+                    <button
+                      type="button"
+                      class="btn btn--gold btn--compact"
+                      data-modal-target="modal-fusha-magnetike"
+                    >
+                      Hap përmbledhjen e plotë
+                    </button>
+                  </div>
+                </div>
+              </article>
+            </div>
           </div>
         </section>
 
@@ -209,35 +279,53 @@
         >
           <div class="topic-section__container">
             <p class="topic-section__meta">Tema 4 / 5</p>
-            <article class="topic-card">
-              <div class="topic-card__head">
-                <span class="topic-card__icon" aria-hidden="true">☢</span>
-                <h3 id="topic-radioaktiviteti-title">Radioaktiviteti</h3>
-              </div>
-              <div class="topic-card__body">
-                <p>
-                  Nukleuzet e pabstabilit zbërthehen duke emetuar grimca α, β ose γ dhe
-                  duke ndryshuar përbërjen e brendshme. Gjysmëkohëzgjatja
-                  përshkruan shpejtësinë e këtij procesi.
-                </p>
-                <p>
-                  Aktiviteti matet në becquerel; mbrojtja dhe përdorimi i kontrolluar
-                  janë thelbësorë në medicinë dhe industrinë.
-                </p>
-                <p class="topic-card__keywords">
-                  <strong>Fokus:</strong> dekaimi · gjysmëkohëzgjatja · dozimetria · mbrojtja
-                </p>
-                <div class="topic-card__actions">
-                  <button
-                    type="button"
-                    class="btn btn--gold btn--compact"
-                    data-modal-target="modal-radioaktiviteti"
-                  >
-                    Hap përmbledhjen e plotë
-                  </button>
+            <div class="topic-section__layout topic-section__layout--reverse">
+              <figure class="topic-figure">
+                <img
+                  src="https://images.unsplash.com/photo-1532187863486-deabcc4438e2?auto=format&amp;fit=crop&amp;w=960&amp;q=80"
+                  alt="Modele molekulare dhe kërkim laboratorik"
+                  width="960"
+                  height="640"
+                  loading="lazy"
+                />
+                <figcaption>Kërkim në laborator — lidhje me strukturën e lëndës (Unsplash)</figcaption>
+              </figure>
+              <article class="topic-card">
+                <div class="topic-card__head">
+                  <span class="topic-card__icon" aria-hidden="true">☢</span>
+                  <h3 id="topic-radioaktiviteti-title">Radioaktiviteti</h3>
                 </div>
-              </div>
-            </article>
+                <div class="topic-card__body">
+                  <p>
+                    Në brendi i disa nukleuseve, forcat nukleare nuk i “mbajnë” të
+                    gjitha kombinimet e protonëve dhe neutronëve në mënyrë të qëndrueshme;
+                    bërthama mund të zbërthehet duke hedhur grimca ose rrezatim.
+                  </p>
+                  <p>
+                    Grimcat α (helium-4 i rëndë), elektronet β⁺ ose β⁻, dhe fotonet me
+                    energji të lartë γ kanë depërtim shumë të ndryshëm në lëndë — prandaj
+                    mbrojtja projektohet sipas llojit të rrezatimit.
+                  </p>
+                  <p>
+                    Aktiviteti A (në becquerel) mat sa shpesh ndodhin dekaimet për njësi
+                    kohe; gjysmëkohëzgjatja T<sub>½</sub> lidhet drejtpërdrejt me
+                    qëndrueshmërinë e një izotopi.
+                  </p>
+                  <p class="topic-card__keywords">
+                    <strong>Fokus:</strong> dekaimi · gjysmëkohëzgjatja · dozimetria · mbrojtja
+                  </p>
+                  <div class="topic-card__actions">
+                    <button
+                      type="button"
+                      class="btn btn--gold btn--compact"
+                      data-modal-target="modal-radioaktiviteti"
+                    >
+                      Hap përmbledhjen e plotë
+                    </button>
+                  </div>
+                </div>
+              </article>
+            </div>
           </div>
         </section>
 
@@ -248,35 +336,54 @@
         >
           <div class="topic-section__container">
             <p class="topic-section__meta">Tema 5 / 5</p>
-            <article class="topic-card">
-              <div class="topic-card__head">
-                <span class="topic-card__icon" aria-hidden="true">✧</span>
-                <h3 id="topic-fizika-hapësirës-title">Fizika e hapësirës</h3>
-              </div>
-              <div class="topic-card__body">
-                <p>
-                  Hapësira nuk është vetëm “bosh”: graviteti përcakton orbita, nga
-                  satelitët deri te planetët. Ligjet e Kepler-it dhe e Newton-it
-                  përshkruajnë lëvizjen qiellore.
-                </p>
-                <p>
-                  Kozmologjia bashkëkohore studion ekspansionin e universit, materien
-                  e errët dhe rrezatimin kozmik të sfondit.
-                </p>
-                <p class="topic-card__keywords">
-                  <strong>Fokus:</strong> orbita · energjia · gravitacioni
-                </p>
-                <div class="topic-card__actions">
-                  <button
-                    type="button"
-                    class="btn btn--gold btn--compact"
-                    data-modal-target="modal-fizika-hapësirës"
-                  >
-                    Hap përmbledhjen e plotë
-                  </button>
+            <div class="topic-section__layout">
+              <figure class="topic-figure">
+                <img
+                  src="https://images.unsplash.com/photo-1462331940025-496dfbfc7561?auto=format&amp;fit=crop&amp;w=960&amp;q=80"
+                  alt="Qielli me yje dhe nebulozë"
+                  width="960"
+                  height="640"
+                  loading="lazy"
+                />
+                <figcaption>Hapësira e thellë qiellore — shkallë të mëdha në fizikë (Unsplash)</figcaption>
+              </figure>
+              <article class="topic-card">
+                <div class="topic-card__head">
+                  <span class="topic-card__icon" aria-hidden="true">✧</span>
+                  <h3 id="topic-fizika-hapësirës-title">Fizika e hapësirës</h3>
                 </div>
-              </div>
-            </article>
+                <div class="topic-card__body">
+                  <p>
+                    Një satelit rreth Tokës ose një komet që i afrohet Diellit ndjek rrugë
+                    që mund të përshkruhen me <strong>orbita</strong> — shpesh aproksimohen si
+                    seksione të elipsave sipas ligjeve të Kepler-it.
+                  </p>
+                  <p>
+                    Ligji i gravitacionit universal të Newton-it na jep përshkrimin e
+                    forcës midis dy masave; për shpejtësinë e nevojshme që një trup të
+                    qëndrojë në orbitë të ulët rreth Tokës përdoret shpesh afrimisht
+                    v ≈ 7,9 km/s (Varësisht nga lartësia).
+                  </p>
+                  <p>
+                    Kozmologjia bashkëkohore lidh vëzhgimin e galaktikave me modele të
+                    ekspansionit të universit dhe përbërjen e tij të mundshme (p.sh. materia e errët,
+                    energjia e errët).
+                  </p>
+                  <p class="topic-card__keywords">
+                    <strong>Fokus:</strong> orbita · energjia · gravitacioni
+                  </p>
+                  <div class="topic-card__actions">
+                    <button
+                      type="button"
+                      class="btn btn--gold btn--compact"
+                      data-modal-target="modal-fizika-hapësirës"
+                    >
+                      Hap përmbledhjen e plotë
+                    </button>
+                  </div>
+                </div>
+              </article>
+            </div>
           </div>
         </section>
       </div>
@@ -284,134 +391,308 @@
 
     <dialog class="topic-modal" id="modal-valët" aria-labelledby="modal-valët-h">
       <div class="topic-modal__inner">
-        <button type="button" class="topic-modal__close" aria-label="Mbyll dritaren">
-          ×
-        </button>
-        <h2 id="modal-valët-h">Valët</h2>
-        <p class="topic-modal__lead">Përhapja e energjisë dhe struktura e valëve në medium.</p>
+        <button type="button" class="topic-modal__close" aria-label="Mbyll dritaren">×</button>
+        <h2 id="modal-valët-h">Valët — përtej pamjes së përditshme</h2>
+        <p class="topic-modal__lead">
+          Valët lidhin muzikën, detin, optikën dhe komunikimet në një gjuhë të përbashkët
+          matematikore.
+        </p>
+        <figure class="topic-modal__figure">
+          <img
+            src="https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&amp;fit=crop&amp;w=900&amp;q=80"
+            alt="Peizazh malor me valë vizuale të lehta"
+            width="900"
+            height="506"
+            loading="lazy"
+          />
+          <figcaption>Peizazh ilustrues — valët shfaqen kudo ku ka përhapje energjie (Unsplash)</figcaption>
+        </figure>
         <div class="topic-modal__body">
           <p>
-            Në fizikë, valët përfaqësojnë një përhapje të një shqetësimi nga një pikë
-            në tjetrën. Gjatësia valore λ, frekuenca f dhe shpejtësia v lidhen me
-            relacionin v = fλ, i cili vlen për shumë lloje valësh.
+            Në fizikë, valët përfaqësojnë një përhapje të një shqetësimi nga një pikë në
+            tjetrën. Gjatësia valore λ, frekuenca f dhe shpejtësia v lidhen me relacionin
+            <strong>v = fλ</strong>, një nga barazimet më të përdorshme në analizën e valëve.
           </p>
           <p>
             Valët mund të jenë <strong>transversale</strong> (zhvendosja është pingul me drejtimin e
             përhapjes, si drita në vakuum) ose <strong>gjatësore</strong> (zhvendosja është paralele,
-            si në valët zanore në ajër).
+            si në valët zanore në ajër në një dimension të thjeshtuar).
           </p>
-          <p><strong>Ide për projekt:</strong></p>
+          <dl class="topic-modal__facts">
+            <dt>Energjia dhe amplituda</dt>
+            <dd>
+              Për shumë valë lineare, energjia që kalon në një kohë të dhënë rritet me
+              katrorin e amplitudës — prandaj përforcimi (“amplifikimi”) i një sinjalit
+              rrit edhe energjinë e bartur.
+            </dd>
+            <dt>Reflektimi dhe përthyerja</dt>
+            <dd>
+              Në kufirin midis dy mediumeve me tregues të ndryshëm përhapjeje, pjesa e
+              energjisë mund të reflektohet ose të përthyhet sipas ligjit të Snell-it në
+              optikë.
+            </dd>
+            <dt>Shembuj bashkëkohorë</dt>
+            <dd>
+              Sonari, radarët, ultratingujt në mjekësi dhe transmetuesit radio përdorin
+              valë të ndryshme frekuencash për të matur distanca ose për të bartur informacion.
+            </dd>
+          </dl>
+          <h3>Ide praktike për projekt</h3>
           <ul>
-            <li>Demonstrim me ujë në en të cekët ose “slinky” për reflektim dhe ndërhyrje.</li>
-            <li>Matje e frekuencës së tingullit me aplikacion në telefon dhe krahasim me vlera teorelike.</li>
+            <li>Demonstrim me ujë në en të cekët ose me litar për të treguar reflektimin dhe stacionet valore.</li>
+            <li>Matje e frekuencës së tingullit me aplikacion në telefon; krahasoje me gjatësinë e një tubi rezonues.</li>
+            <li>Skicë e ndërhyrjes konstruktive/destruktive me dy burime në sipërfaqe uji (nëse ke mundësi laboratori).</li>
           </ul>
+          <p class="topic-modal__note">
+            Shënim: për prezantim, mund të shtoni grafe (amplitudë vs. kohë) ose foto nga një
+            eksperiment i thjeshtë në klasë.
+          </p>
         </div>
       </div>
     </dialog>
 
     <dialog class="topic-modal" id="modal-fusha-elektrike" aria-labelledby="modal-fusha-el-h">
       <div class="topic-modal__inner">
-        <button type="button" class="topic-modal__close" aria-label="Mbyll dritaren">
-          ×
-        </button>
-        <h2 id="modal-fusha-el-h">Fusha elektrike</h2>
-        <p class="topic-modal__lead">Nga ngarkesa te forca — përshkrimi i fushës E.</p>
+        <button type="button" class="topic-modal__close" aria-label="Mbyll dritaren">×</button>
+        <h2 id="modal-fusha-el-h">Fusha elektrike — nga vektori E te qarku i thjeshtë</h2>
+        <p class="topic-modal__lead">
+          Ngarkesat krijojnë fushë; fusha përshkruan forcën mbi çdo ngarkesë të re.
+        </p>
+        <figure class="topic-modal__figure">
+          <img
+            src="https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&amp;fit=crop&amp;w=900&amp;q=80"
+            alt="Rrjet energjie elektrike dhe linja të tensionit të lartë"
+            width="900"
+            height="506"
+            loading="lazy"
+          />
+          <figcaption>Infrastrukturë elektrike — tension dhe transmetim energjie (Unsplash)</figcaption>
+        </figure>
         <div class="topic-modal__body">
           <p>
             Intensiteti i fushës elektrike në një pikë tregon se sa “e fortë” është
-            ndikimi elektrik mbi një ngarkesë njësie pozitive. Lëvizja e ngarkesave në
-            një material ose në hapësirë ndryshon rrjetën e fushës.
+            ndikimi elektrik mbi një ngarkesë njësie pozitive. Në mjedise me materiale
+            të ndryshme (dielektrikë), fusha brenda materialit zakonisht zbutet krahasuar
+            me vakumin, në varësi të konstantës dielektrike.
           </p>
           <p>
-            Potenciali elektrik dhe diferenca e potenciali (tensioni) janë të lidhura me
-            punën që duhet për të lëvizur ngarkesën midis dy pikave. Kondensatorët
-            ruajnë energji në fushën midis pllakave.
+            Potenciali elektrik V dhe diferenca e potencialit (tensioni ΔV) lidhen me
+            punën për të lëvizur ngarkesën midis dy pikave. Kjo shpjegon pse “çmimi” i
+            energjisë në një kondensator varet nga fusha mes pllakave dhe nga kapaciteti C.
           </p>
-          <p><strong>Ide për projekt:</strong></p>
+          <dl class="topic-modal__facts">
+            <dt>Coulomb &amp; Gauss (përmbledhje ideje)</dt>
+            <dd>
+              Ligji i Coulomb-it jep forcën mes dy ngarkesave pikë. Ligji i Gauss-it
+              thjeshton llogaritjen e fluksit të fushës kur ka simetri sferike, rrethore
+              ose planarë.
+            </dd>
+            <dt>Energjia në fushë</dt>
+            <dd>
+              Në shumë konfigurime, energjia e ruajtur lidhet me integralin e intensitetit
+              të fushës në të gjithë hapësirën ku ajo është jovektor zero të konsiderueshme.
+            </dd>
+            <dt>Rreziqet në jetën e përditshme</dt>
+            <dd>
+              Tension i lartë pa izolim të mirë sjell rrezik goditjeje ose shkëndijë; prandaj
+              qarku “tokëzimi” dhe pajisjet diferenciale të mbrojtjes janë standard në
+              ndërtesa moderne.
+            </dd>
+          </dl>
+          <h3>Ide praktike për projekt</h3>
           <ul>
-            <li>Skicë e vijeve të fushës midis ngarkesash të ndryshme me simulim ose letër.</li>
-            <li>Diskutim i rënies së tensionit në një qark të thjeshtë me rezistencë.</li>
+            <li>Vizato vija fushë për dy ngarkesa të kundërta dhe një neutrale ndërmjet tyre (diskutim në grup).</li>
+            <li>Shpjego pse dy pllaka paralele me ngarkesa krijojnë fushë afërsisht homogene në mes.</li>
+            <li>Hulumto një shembull të thjeshtë nga jetën e përditshme (çakmak elektrostatik, flokët e ngraitur).</li>
           </ul>
+          <p class="topic-modal__note">
+            Nëse prezanton në PowerPoint, një animacion i thjeshtë i qarkut mund të sqarojë
+            raportin midis rrymës, tensionit dhe rezistencës (ligji i Ohm-it si shtesë).
+          </p>
         </div>
       </div>
     </dialog>
 
     <dialog class="topic-modal" id="modal-fusha-magnetike" aria-labelledby="modal-fusha-mag-h">
       <div class="topic-modal__inner">
-        <button type="button" class="topic-modal__close" aria-label="Mbyll dritaren">
-          ×
-        </button>
-        <h2 id="modal-fusha-mag-h">Fusha magnetike</h2>
-        <p class="topic-modal__lead">B, rrymat dhe induksioni — baza e motorëve dhe gjeneratorëve.</p>
+        <button type="button" class="topic-modal__close" aria-label="Mbyll dritaren">×</button>
+        <h2 id="modal-fusha-mag-h">Fusha magnetike — nga magneti te induksioni</h2>
+        <p class="topic-modal__lead">
+          B, rrymat dhe ndryshimi i fluksit — motorë, gjeneratorë dhe MRI në spital.
+        </p>
+        <figure class="topic-modal__figure">
+          <img
+            src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?auto=format&amp;fit=crop&amp;w=900&amp;q=80"
+            alt="Pajisje elektrike dhe përcjellës në projekt"
+            width="900"
+            height="506"
+            loading="lazy"
+          />
+          <figcaption>Përcjellës dhe pajisje — lidhje me rrymën dhe fushën (Unsplash)</figcaption>
+        </figure>
         <div class="topic-modal__body">
           <p>
             Fusha magnetike B përshkruan se si një magnet ose një rrjedhje rryme ndikon
-            në grimca të ngarkuara në lëvizje. Rregulli i dorës së djathtë (ose i
-            mbulesës së duarit) ndihmon në vizatimin e fushës rreth një përcjellësi.
+            në grimcat e ngarkuara në lëvizje. Rregullat e dorës së djathtë ndihmojnë të
+            parashikosh drejtimin e fushës për rryma të drejta në përcjellësa të thjeshtë.
           </p>
           <p>
-            Ndryshimi i fluksit magnetik përmes një spirage shkakton një tension të
-            induktuar — ky është parimi i gjeneratorëve dhe transformatorëve.
+            Ndryshimi i fluksit magnetik Φ përmes një sipërfaqeje të mbyllur (p.sh. spiralë)
+            indukton një forcë elektromotore — ky është zbulimi që solli transformatorët,
+            dinamot dhe sensorët pa kontakt.
           </p>
-          <p><strong>Ide për projekt:</strong></p>
+          <p>
+            Kur grimca me ngarkesë q lëviz me shpejtësia <strong>v</strong> në një fushë <strong>B</strong>, forca
+            e Lorencit përshkruhet nga <strong>F = q (v × B)</strong> — një nga urat që lidhin
+            elektromagnetizmin me mekanikën.
+          </p>
+          <dl class="topic-modal__facts">
+            <dt>Materialet magnetike</dt>
+            <dd>
+              Ferromagnetikët (si hekuri i veçantë) “forcojnë” fushën lidhur me ajrin;
+              paramagnetikët e dobët forcojnë pak; diamagnetikët e zbehin pak fushën
+              e jashtme.
+            </dd>
+            <dt>Tokamaku dhe MRI (shembuj të largët)</dt>
+            <dd>
+              Fusha të forta magnetike përdoren për të kontrolluar plazmën ose për të
+              polarizuar spinin e protonëve në vizatim mjekësor — të dyja aplikohen
+              konceptet e bazës së fizikës që po studioni.
+            </dd>
+          </dl>
+          <h3>Ide praktike për projekt</h3>
           <ul>
-            <li>Eksperiment i thjeshtë me magnet dhe bobinë + LED për të “kapur” një impuls tensioni.</li>
-            <li>Shpjegim me figura i forcës së Lorencit për një grimcë që lëviz përpjekët me B.</li>
+            <li>Me një magnet, disa bashkime spiraje dhe një LED, trego një impuls tensioni kur lëviz magnetin.</li>
+            <li>Vizato drejtimin e forcës për një proton që futet pingul në një fushë B të konstante.</li>
+            <li>Diskutim: pse transformatori përdor një bërthamë hekuri dhe izolim ndërmjet spirave?</li>
           </ul>
+          <p class="topic-modal__note">
+            Sigurohuni që eksperimentet me rrymë të jenë në tension të ulët dhe me mbikëqyrje.
+          </p>
         </div>
       </div>
     </dialog>
 
     <dialog class="topic-modal" id="modal-radioaktiviteti" aria-labelledby="modal-radio-h">
       <div class="topic-modal__inner">
-        <button type="button" class="topic-modal__close" aria-label="Mbyll dritaren">
-          ×
-        </button>
-        <h2 id="modal-radio-h">Radioaktiviteti</h2>
-        <p class="topic-modal__lead">Bërthama, dekaimi dhe mbrojtja.</p>
+        <button type="button" class="topic-modal__close" aria-label="Mbyll dritaren">×</button>
+        <h2 id="modal-radio-h">Radioaktiviteti — dekaim, matje dhe përgjegjësi</h2>
+        <p class="topic-modal__lead">
+          Bërthama të paqëndrueshme zbërthehen; ne matim, përshkruajmë dhe mbrohemi.
+        </p>
+        <figure class="topic-modal__figure">
+          <img
+            src="https://images.unsplash.com/photo-1576086213369-97a306d36557?auto=format&amp;fit=crop&amp;w=900&amp;q=80"
+            alt="Punë laboratori shkencor me mikroskop"
+            width="900"
+            height="506"
+            loading="lazy"
+          />
+          <figcaption>Laborator — radioaktiviteti lidhet me strukturën e nukleusit (Unsplash)</figcaption>
+        </figure>
         <div class="topic-modal__body">
           <p>
-            Grimcat α, β dhe γ kanë ndryshues depërtimi dhe energjie. Gjysmëkohëzgjatja
-            tregon pas sa kohe aktiviteti bie në gjysmë — e domosdoshme për datimin
-            gjeologjik dhe për protokollet e sigurisë.
+            Grimcat α janë të rënda dhe ndalohen lehtësisht nga një fletë letre; β depërtojnë
+            disa centimetra në inde; γ janë fotone me energji të lartë dhe kërkojnë
+            mburoja më të dendura (p.sh. plumb, beton) për mbrojtje të mirë.
           </p>
           <p>
-            Në jetën e përditshme hasim radioaktivitet natyror dhe artificial (mjekësi,
-            energji). Është e rëndësishme të dimë masat e mbrojtjes: distanca, koha
-            e ekspozimit dhe mburojat e përshtatshme.
+            Gjysmëkohëzgjatja T<sub>½</sub> është koha për të cilën aktiviteti i një
+            mostre bie në gjysmë; pas n gjysmëkohë, mbetet (½)<sup>n</sup> e aktivitetit fillestar.
+            Ky mendim është çelës për datimin arkeologjik me karbon-14 dhe për sigurinë
+            e mbetjeve nukleare.
           </p>
-          <p><strong>Ide për projekt:</strong></p>
+          <p>
+            Njësitë: aktiviteti në <strong>becquerel (Bq)</strong> (dekaje për sekondë); doza dhe
+            efektet biologjike përshkruhen me madhësi të tjera (gray, sievert) që lidhen
+            me energjinë e absorbuar dhe llojin e rrezatimit.
+          </p>
+          <dl class="topic-modal__facts">
+            <dt>Zbatime të njohura</dt>
+            <dd>
+              Medicinë (PET, terapi me rrezatim të synuar), industria (kontrolli i
+              trashësisë së pllakave metalike), dhe energjia nukleare janë fusha ku
+              radioaktiviteti haset profesionalisht — gjithmonë me rregulla strikte.
+            </dd>
+            <dt>Mbrojtja (përmbledhje)</dt>
+            <dd>
+              Koha, distanca dhe mburojat e përshtatshme janë tre shtylla: pak ekspozim,
+              larg burimit kur është e mundur, dhe materiale që përthithin ose shpërndajnë
+              grimcat sipas nevojës.
+            </dd>
+          </dl>
+          <h3>Ide praktike për projekt</h3>
           <ul>
-            <li>Tabelë përkrahasuese e tre llojeve të rrezatimit dhe mjetet e zbulimit.</li>
-            <li>Diskutim i përdorimit të izotopeve në terapi ose diagnostikim (pa detaje të tepërta teknike).</li>
+            <li>Tabelë krahasimi: α, β, γ — depërtimi, ngarkesa, shembull izotopi.</li>
+            <li>Prezantim etik: përdorimi i energjisë nukleare përplotës ose kundërshtime të argumentuara.</li>
+            <li>Nëse nuk keni pajisje matëse, përshkruaj vizualisht si funksionon një “zhabëzues Geiger” me fjalë.</li>
           </ul>
+          <p class="topic-modal__note">
+            Mos prek disa burime të panjohura të rrezatimit; në shkollë përdorni vetëm modele,
+            figura dhe të dhëna të verifikuara.
+          </p>
         </div>
       </div>
     </dialog>
 
     <dialog class="topic-modal" id="modal-fizika-hapësirës" aria-labelledby="modal-hapësirë-h">
       <div class="topic-modal__inner">
-        <button type="button" class="topic-modal__close" aria-label="Mbyll dritaren">
-          ×
-        </button>
-        <h2 id="modal-hapësirë-h">Fizika e hapësirës</h2>
-        <p class="topic-modal__lead">Gravitacioni, orbita dhe përmasat e universit.</p>
+        <button type="button" class="topic-modal__close" aria-label="Mbyll dritaren">×</button>
+        <h2 id="modal-hapësirë-h">Fizika e hapësirës — orbita, masa dhe kozmosi</h2>
+        <p class="topic-modal__lead">
+          Nga hedhja e një guri te galaktikat: i njëjti ligj i gravitetit, shkallë të ndryshme.
+        </p>
+        <figure class="topic-modal__figure">
+          <img
+            src="https://images.unsplash.com/photo-1614732414444-096e5f1122d5?auto=format&amp;fit=crop&amp;w=900&amp;q=80"
+            alt="Planet Saturn me unazat e tij"
+            width="900"
+            height="506"
+            loading="lazy"
+          />
+          <figcaption>Trupa qiellor — orbita dhe dinamika gravitacionale (Unsplash)</figcaption>
+        </figure>
         <div class="topic-modal__body">
           <p>
-            Për trupa sferike të mëdhenj, fusha e jashtme gravitacionale sillet sikur
-            e gjithë masa të ishte në qendër — kjo thjeshton orbitat eliptike sipas
-            Kepler-it dhe ligjit të gravitacionit universal të Newton-it.
+            Për shumë misione planifikimi, Tokës i konsiderohet një masë qendrore e madhe
+            dhe sateliti “i vogël” — jepet energjia specifike orbitale dhe madhësitë e
+            elipsit sipas Kepler-it (T² ∝ a³ për sistemin diellor, me interpretim të kujdesshëm).
           </p>
           <p>
-            Hulumtime bashkëkohore flasin për ekspansionin e universit, rrezatimin
-            kozmik të sfondit dhe modele të materies së errët — fusha që bashkon
-            fizikën e madhe me vëzhgimin astronomik.
+            Shpejtësia e arrësjes për të “shpërbërë” lidhjen gravitacionale nga një trup
+            (sipas aproksimit klasik) përshkruhet nga energjia kinetike dhe potenciale; për
+            Tokën në sipërfaqe, ngritja orbitale është e madhe — prandaj raketat shumëfazëshe
+            djegin karburant për minuta të tëra.
           </p>
-          <p><strong>Ide për projekt:</strong></p>
+          <p>
+            Rrezatimi kozmik i sfondit (CMB) dhe zhvendosja e kuqe e galaktikave janë
+            dy nga argumentet më të fortë për një univers në ekspans historik të studiuar
+            me teleskopë në tokë dhe në orbitë.
+          </p>
+          <dl class="topic-modal__facts">
+            <dt>Newton &amp; Kepler</dt>
+            <dd>
+              Newton-i tregoi se një forcë inverse katrore jep saktësisht orbita eliptike
+              për planetët; Kepler-i kishte përshkruar më parë lëvizjen me anë të ligjeve
+              empirike të nxjerra nga të dhënat.
+            </dd>
+            <dt>Misionet moderne</dt>
+            <dd>
+              Stacioni hapësinor ndërkombëtar, teleskopët si JWST dhe anijet robotike te
+              planetët e largët shtrijnë kuptimin tonë — por bazat matematikore mbeten
+              të njëjta që mësoni në gjimnaz.
+            </dd>
+          </dl>
+          <h3>Ide praktike për projekt</h3>
           <ul>
-            <li>Llogaritje e thjeshtë e shpejtësisë orbitale në një orbitë të afërt rreth Tokës.</li>
-            <li>Përmbledhje e një misioni kozmik të famshëm (satelit ose anije planetare) me shënime historike.</li>
+            <li>Llogarit v<sub>circ</sub> ≈ √(GM/r) për një orbitë të ulët Tokësore (merr G, M, r nga tabela).</li>
+            <li>Krahaso periudhën orbitale të dy satelitësh të imagjinuar në rreze të ndryshëm.</li>
+            <li>Përmbledhje 2–3 faqe për një nga sondet (Voyager, Cassini, Mars rover…) me përgjegjës të misionit.</li>
           </ul>
+          <p class="topic-modal__note">
+            Numra të sakta varen nga modeli (rrezat mes qendrave, shpërndarja e masës);
+            përmend gjithmonë çfarë aproksimesh përdor.
+          </p>
         </div>
       </div>
     </dialog>
